@@ -76,9 +76,13 @@
                 <span class="hidden sm:inline text-xs text-stone-400 font-medium tracking-wide">/ B.A. Medienmanagement</span>
             </div>
             
-            <nav class="flex items-center space-x-6 sm:space-x-8 text-xs font-semibold uppercase tracking-wider text-stone-600">
+            <nav class="flex items-center space-x-5 sm:space-x-7 text-xs font-semibold uppercase tracking-wider text-stone-600">
                 <a href="#proben" class="hover:text-stone-950 transition-colors">Arbeitsproben</a>
                 <a href="#cv" class="hover:text-stone-950 transition-colors">Lebenslauf</a>
+                <a href="https://www.linkedin.com/in/veronika-d-061031295" target="_blank" rel="noopener noreferrer" class="hover:text-[#0a66c2] transition-colors flex items-center gap-1 normal-case text-sm" title="LinkedIn Profil">
+                    <i class="fa-brands fa-linkedin text-base text-[#0a66c2]"></i>
+                    <span class="hidden md:inline text-xs font-semibold uppercase tracking-wider text-stone-600 hover:text-stone-950">LinkedIn</span>
+                </a>
                 <button onclick="openCvModal()" class="px-3.5 py-1.5 rounded-md bg-stone-900 text-stone-100 hover:bg-stone-800 transition flex items-center gap-1.5 shadow-sm">
                     <i class="fa-solid fa-file-lines text-xs"></i>
                     <span>CV Ansehen</span>
@@ -114,6 +118,13 @@
                                 <i class="fa-solid fa-file-pdf text-xs"></i>
                                 <span>Lebenslauf anzeigen</span>
                             </button>
+
+                            <!-- NEUER LINKEDIN BUTTON -->
+                            <a href="https://www.linkedin.com/in/veronika-d-061031295" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-lg border border-stone-300 bg-white hover:bg-stone-50 text-[#0a66c2] hover:text-[#004182] text-xs sm:text-sm font-semibold tracking-wide transition flex items-center gap-2 shadow-sm">
+                                <i class="fa-brands fa-linkedin text-base"></i>
+                                <span class="text-stone-800">LinkedIn</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-stone-400"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -144,11 +155,22 @@
                                 <dt class="text-stone-500">Telefon:</dt>
                                 <dd class="font-semibold text-stone-900 text-right"><a href="tel:+4917654331093" class="hover:underline">+49 176 54331093</a></dd>
                             </div>
+                            <!-- LINKEDIN LINK IN DER STECKBRIEF-BOX -->
+                            <div class="flex justify-between border-t border-stone-200 pt-2 items-center">
+                                <dt class="text-stone-500">LinkedIn:</dt>
+                                <dd class="font-semibold text-right">
+                                    <a href="https://www.linkedin.com/in/veronika-d-061031295" target="_blank" rel="noopener noreferrer" class="text-[#0a66c2] hover:underline inline-flex items-center gap-1">
+                                        <i class="fa-brands fa-linkedin text-sm"></i>
+                                        <span>veronika-d-061031295</span>
+                                    </a>
+                                </dd>
+                            </div>
                         </dl>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- ARBEITSPROBEN SECTION -->
         <section id="proben" class="py-20 border-b border-stone-200">
             <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -239,38 +261,37 @@
                         </div>
                     </div>
 
-                   <!-- WORK 3: MAGAZINE 1 (Rhön) -->
-<div class="portfolio-item bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col group hover:shadow-lg transition-all" data-category="magazine">
-    <div class="relative h-52 bg-editorial-100 cursor-pointer p-4 flex items-center justify-center overflow-hidden" 
-         onclick="openFlipbookModal('Fotoreportage Rhön', 'https://heyzine.com/flip-book/b3f466a40c.html')">
-        <img src="Fotoreportage_Rhoenrad_Bild.jpg" 
-             alt="Fotoreportage Rhönrad Cover" 
-             class="h-full object-contain rounded shadow-md group-hover:-translate-y-1 transition duration-300"
-             onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop'">
-        <span class="absolute top-2.5 left-2.5 bg-stone-900/90 text-stone-100 text-[10px] font-bold uppercase px-2 py-0.5 rounded tracking-wider flex items-center gap-1.5">
-            <i class="fa-solid fa-book-open"></i> Flipbook • Print
-        </span>
-    </div>
-    <div class="p-5 flex-1 flex flex-col justify-between">
-        <div>
-            <span class="text-[11px] font-semibold text-stone-400 uppercase tracking-wider">Cross-Media Projekt</span>
-            <h3 class="font-serif font-bold text-lg text-stone-950 mt-1">Fotoreportage Rhön</h3>
-            <p class="text-xs text-stone-600 mt-2 leading-relaxed">
-               Crossmediales 24-Stunden-Projekt: Magazin-Layout, Fotografie und begleitende Audiobeiträge.
-            </p>
-        </div>
-        <div class="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between">
-            <span class="text-[11px] font-medium text-stone-500">Format: Interaktives Magazin</span>
-            <button onclick="openFlipbookModal('Fotoreportage Rhön', 'https://heyzine.com/flip-book/b3f466a40c.html')" 
-                    class="text-xs font-semibold text-stone-900 hover:text-stone-600 transition flex items-center gap-1.5">
-                <span>Durchblättern</span>
-                <i class="fa-solid fa-book-open-reader text-xs"></i>
-            </button>
-        </div>
-    </div>
-</div>
-    
-                        
+                    <!-- WORK 3: MAGAZINE 1 (Rhön) -->
+                    <div class="portfolio-item bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col group hover:shadow-lg transition-all" data-category="magazine">
+                        <div class="relative h-52 bg-editorial-100 cursor-pointer p-4 flex items-center justify-center overflow-hidden" 
+                             onclick="openFlipbookModal('Fotoreportage Rhön', 'https://heyzine.com/flip-book/b3f466a40c.html')">
+                            <img src="Fotoreportage_Rhoenrad_Bild.jpg" 
+                                 alt="Fotoreportage Rhönrad Cover" 
+                                 class="h-full object-contain rounded shadow-md group-hover:-translate-y-1 transition duration-300"
+                                 onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop'">
+                            <span class="absolute top-2.5 left-2.5 bg-stone-900/90 text-stone-100 text-[10px] font-bold uppercase px-2 py-0.5 rounded tracking-wider flex items-center gap-1.5">
+                                <i class="fa-solid fa-book-open"></i> Flipbook • Print
+                            </span>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <span class="text-[11px] font-semibold text-stone-400 uppercase tracking-wider">Cross-Media Projekt</span>
+                                <h3 class="font-serif font-bold text-lg text-stone-950 mt-1">Fotoreportage Rhön</h3>
+                                <p class="text-xs text-stone-600 mt-2 leading-relaxed">
+                                   Crossmediales 24-Stunden-Projekt: Magazin-Layout, Fotografie und begleitende Audiobeiträge.
+                                </p>
+                            </div>
+                            <div class="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between">
+                                <span class="text-[11px] font-medium text-stone-500">Format: Interaktives Magazin</span>
+                                <button onclick="openFlipbookModal('Fotoreportage Rhön', 'https://heyzine.com/flip-book/b3f466a40c.html')" 
+                                        class="text-xs font-semibold text-stone-900 hover:text-stone-600 transition flex items-center gap-1.5">
+                                    <span>Durchblättern</span>
+                                    <i class="fa-solid fa-book-open-reader text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- WORK 4: PODCAST 1 -->
                     <div class="portfolio-item bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col group hover:shadow-lg transition-all" data-category="podcast">
                         <div class="relative h-52 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 p-5 flex flex-col justify-between text-white border-b border-stone-800">
@@ -583,6 +604,10 @@
                             <p><span class="text-stone-400">Anschrift:</span> Randersackerer Str. 26, 97072 Würzburg</p>
                             <p><span class="text-stone-400">Telefon:</span> +49 176 54331093</p>
                             <p><span class="text-stone-400">E-Mail:</span> veronika.dondl@gmail.com</p>
+                            <p>
+                                <span class="text-stone-400">LinkedIn:</span> 
+                                <a href="https://www.linkedin.com/in/veronika-d-061031295" target="_blank" rel="noopener noreferrer" class="text-[#0a66c2] hover:underline font-medium">linkedin.com/in/veronika-d-061031295</a>
+                            </p>
                         </div>
                     </div>
                     <img src="2026_bewerbungsfotos-22_2.jpg" alt="Veronika Dondl" class="w-28 h-36 object-cover rounded-lg border border-stone-200 shadow-sm flex-shrink-0" onerror="this.style.display='none'">
@@ -841,10 +866,14 @@
                 <p class="mt-1">Dossier &amp; Werkschau zur direkten Einsichtnahme.</p>
             </div>
             
-            <div class="flex items-center space-x-6 text-stone-700 font-medium">
+            <div class="flex flex-wrap items-center gap-6 text-stone-700 font-medium">
                 <button onclick="openCvModal()" class="hover:text-stone-950 underline underline-offset-4">CV Öffnen</button>
                 <button onclick="downloadCvPrint()" class="hover:text-stone-950 underline underline-offset-4">Druckversion</button>
                 <a href="mailto:veronika.dondl@gmail.com" class="hover:text-stone-950 underline underline-offset-4">veronika.dondl@gmail.com</a>
+                <a href="https://www.linkedin.com/in/veronika-d-061031295" target="_blank" rel="noopener noreferrer" class="hover:text-[#0a66c2] flex items-center gap-1.5 underline underline-offset-4">
+                    <i class="fa-brands fa-linkedin text-sm text-[#0a66c2]"></i>
+                    <span>LinkedIn Profil</span>
+                </a>
             </div>
         </div>
     </footer>
