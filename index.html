@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veronika Dondl | Portfolio & Lebenslauf</title>
+    <title>Veronika Dondl | Portfolio &amp; Lebenslauf</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,8 +114,6 @@
                                 <i class="fa-solid fa-file-pdf text-xs"></i>
                                 <span>Lebenslauf anzeigen</span>
                             </button>
-
-                            
                         </div>
                     </div>
 
@@ -159,7 +157,7 @@
                     <div>
                         <span class="text-xs text-stone-500 uppercase tracking-wider font-bold">Mediathek</span>
                         <h2 class="text-3xl font-serif font-bold text-stone-950 mt-1">Ausgewählte Arbeitsproben</h2>
-                        <p class="text-stone-600 text-sm mt-1">Eingebundene YouTube-Videos, Printprojekte sowie SoundCloud-Podcasts.</p>
+                        <p class="text-stone-600 text-sm mt-1">Eingebundene YouTube-Videos, blätterbare Magazine sowie SoundCloud-Podcasts.</p>
                     </div>
 
                     <!-- Filter Tabs -->
@@ -242,33 +240,34 @@
                         </div>
                     </div>
 
-                    <!-- WORK 3: MAGAZINE 1 (Rhön) -->
+                    <!-- WORK 3: MAGAZINE 1 (Rhön) - MIT INTERAKTIVEM FLIPBOOK -->
                     <div class="portfolio-item bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col group hover:shadow-lg transition-all" data-category="magazine">
-                        <div class="relative h-52 bg-editorial-100 cursor-pointer p-4 flex items-center justify-center overflow-hidden" onclick="openMagazineModal('Cross-Media: Fotoreportage Rhön', 'Hochschulprojekt • Mai 2025', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop', 'Konzeption und Gestaltung einer Fotoreportage rund um regionale Themen (Rhön Heu Gin, Rhönrad). Kombination aus Print-Layout, Fotografie und begleitenden Audiobeiträgen.')">
+                        <!-- Tausche bei Bedarf 'https://heyzine.com/flip-book/c2db1b753f.html' gegen deinen Link oder dein PDF aus -->
+                        <div class="relative h-52 bg-editorial-100 cursor-pointer p-4 flex items-center justify-center overflow-hidden" onclick="openFlipbookModal('Fotoreportage Rhön', 'https://heyzine.com/flip-book/c2db1b753f.html')">
                             <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop" alt="Fotoreportage Rhön" class="h-full object-cover rounded shadow-md group-hover:-translate-y-1 transition duration-300">
-                            <span class="absolute top-2.5 left-2.5 bg-stone-900/90 text-stone-100 text-[10px] font-bold uppercase px-2 py-0.5 rounded tracking-wider">Magazin • Print</span>
+                            <span class="absolute top-2.5 left-2.5 bg-stone-900/90 text-stone-100 text-[10px] font-bold uppercase px-2 py-0.5 rounded tracking-wider flex items-center gap-1.5">
+                                <i class="fa-solid fa-book-open"></i> Flipbook • Print
+                            </span>
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
                                 <span class="text-[11px] font-semibold text-stone-400 uppercase tracking-wider">Cross-Media Projekt</span>
                                 <h3 class="font-serif font-bold text-lg text-stone-950 mt-1">Fotoreportage Rhön</h3>
                                 <p class="text-xs text-stone-600 mt-2 leading-relaxed">
-                                   Crossmediales 24-Stunden-Projekt.
+                                   Crossmediales 24-Stunden-Projekt: Magazin-Layout, Fotografie und begleitende Audiobeiträge.
                                 </p>
                             </div>
                             <div class="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between">
-                                <span class="text-[11px] font-medium text-stone-500">Format: Magazin-Layout</span>
-                                <button onclick="openMagazineModal('Cross-Media: Fotoreportage Rhön', 'Hochschulprojekt • Mai 2025', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop', 'Konzeption und Gestaltung einer Fotoreportage rund um regionale Themen (Rhön Heu Gin, Rhönrad). Kombination aus Print-Layout, Fotografie und begleitenden Audiobeiträgen.')" class="text-xs font-semibold text-stone-900 hover:text-stone-600 transition flex items-center gap-1">
-                                    <span>Details ansehen</span>
-                                    <i class="fa-solid fa-book-open text-[10px]"></i>
+                                <span class="text-[11px] font-medium text-stone-500">Format: Interaktives Magazin</span>
+                                <button onclick="openFlipbookModal('Fotoreportage Rhön', 'https://heyzine.com/flip-book/c2db1b753f.html')" class="text-xs font-semibold text-stone-900 hover:text-stone-600 transition flex items-center gap-1.5">
+                                    <span>Durchblättern</span>
+                                    <i class="fa-solid fa-book-open-reader text-xs"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    
-
-                    <!-- WORK 5: PODCAST 1 -->
+                    <!-- WORK 4: PODCAST 1 -->
                     <div class="portfolio-item bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col group hover:shadow-lg transition-all" data-category="podcast">
                         <div class="relative h-52 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 p-5 flex flex-col justify-between text-white border-b border-stone-800">
                             <div class="flex justify-between items-center">
@@ -317,7 +316,7 @@
                         </div>
                     </div>
 
-                    <!-- WORK 6: PODCAST 2 -->
+                    <!-- WORK 5: PODCAST 2 -->
                     <div class="portfolio-item bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col group hover:shadow-lg transition-all" data-category="podcast">
                         <div class="relative h-52 bg-gradient-to-br from-stone-900 via-stone-900 to-stone-950 p-5 flex flex-col justify-between text-white border-b border-stone-800">
                             <div class="flex justify-between items-center">
@@ -379,7 +378,6 @@
                         <h2 class="text-3xl font-serif font-bold text-stone-950 mt-1">Werdegang &amp; Projekte</h2>
                     </div>
                     <div class="flex items-center gap-4">
-                        
                         <button onclick="openCvModal()" class="text-xs font-semibold text-stone-950 underline underline-offset-4">
                             Dokument-Vollansicht öffnen →
                         </button>
@@ -400,7 +398,7 @@
                                 </div>
                                 <p class="text-xs font-semibold text-stone-600 mt-0.5">THWS International Office</p>
                                 <ul class="text-xs text-stone-600 mt-2 list-disc list-inside space-y-1 leading-relaxed">
-                                    <li>Social Media / Content Creation </li>
+                                    <li>Social Media / Content Creation</li>
                                     <li>Internationale Teamarbeit mit 8 europäischen Partnerhochschulen</li>
                                     <li>Erstellung von PowerPoint-Präsentationen</li>
                                     <li>Unterstützung der Kommunikationsarbeit im International Office</li>
@@ -469,7 +467,7 @@
                             <h3 class="text-xs uppercase tracking-wider font-bold text-stone-400 mb-4">Projekt-Highlights</h3>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div class="p-4 bg-white rounded-lg border border-stone-200">
-                                    <span class="text-[10px] font-bold text-stone-400 uppercase tracking-wider">Februar 2026 </span>
+                                    <span class="text-[10px] font-bold text-stone-400 uppercase tracking-wider">Februar 2026</span>
                                     <h5 class="font-serif font-bold text-sm text-stone-900 mt-1">Málaga, Spanien</h5>
                                     <p class="text-xs text-stone-600 mt-1">Imagefilm Universidad de Málaga, mediale Begleitung der Hochschulleitung.</p>
                                 </div>
@@ -563,11 +561,12 @@
                     <span class="text-xs font-bold uppercase tracking-wider bg-stone-900 text-stone-100 px-2 py-0.5 rounded">Dokument</span>
                     <span class="font-serif font-bold text-stone-900 text-sm sm:text-base">Curriculum Vitae • Veronika Dondl</span>
                 </div>
-               
+                <button onclick="closeCvModal()" class="w-8 h-8 rounded-full hover:bg-stone-200 text-stone-600 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
             </div>
 
             <div class="p-6 sm:p-10 overflow-y-auto custom-scrollbar font-sans text-stone-900 space-y-8 bg-white flex-1">
-                
                 <!-- Kopfbereich: Persönliches -->
                 <div class="border-b border-stone-300 pb-6 flex flex-col sm:flex-row justify-between sm:items-start gap-4">
                     <div>
@@ -589,7 +588,6 @@
                 <div>
                     <h3 class="text-xs uppercase tracking-wider font-bold text-stone-400 mb-4 pb-1 border-b border-stone-200">Berufserfahrung</h3>
                     <div class="space-y-6 text-xs">
-                        
                         <div class="border-l-2 border-stone-300 pl-4">
                             <div class="flex flex-wrap justify-between items-baseline font-bold text-stone-900 text-sm">
                                 <span>Studentische Hilfskraft</span>
@@ -629,7 +627,6 @@
                                 <li>Unterstützung bei der Organisation und Ausleihe der Technik</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
@@ -637,8 +634,6 @@
                 <div>
                     <h3 class="text-xs uppercase tracking-wider font-bold text-stone-400 mb-4 pb-1 border-b border-stone-200">Projekte</h3>
                     <div class="space-y-5 text-xs">
-                        
-                        <!-- Projekt 1 -->
                         <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200">
                             <div class="flex flex-wrap justify-between items-baseline">
                                 <h4 class="font-bold text-stone-900 text-sm">Medienprojekt: Málaga, Spanien</h4>
@@ -653,22 +648,20 @@
                             </ul>
                         </div>
 
-                        <!-- Projekt 2 -->
                         <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200">
                             <div class="flex flex-wrap justify-between items-baseline">
                                 <h4 class="font-bold text-stone-900 text-sm">Immersives Medienprojekt: Bangalore, Indien</h4>
                                 <span class="text-[11px] text-stone-500 font-medium">November 2025</span>
                             </div>
-                            <p class="text-stone-500 text-[11px] mb-1">Hochschulprojekt </p>
+                            <p class="text-stone-500 text-[11px] mb-1">Hochschulprojekt</p>
                             <ul class="text-stone-600 list-disc list-inside space-y-0.5 leading-relaxed mt-1">
                                 <li>Mediale Begleitung der Hochschulleitung</li>
                                 <li>Fotografie</li>
                                 <li>Videografie (2D, 3D und 360°)</li>
-                                 <li>Social Media Begleitung des Projekts (@mmadventuretours)</li>
+                                <li>Social Media Begleitung des Projekts (@mmadventuretours)</li>
                             </ul>
                         </div>
 
-                        <!-- Projekt 3 -->
                         <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200">
                             <div class="flex flex-wrap justify-between items-baseline">
                                 <h4 class="font-bold text-stone-900 text-sm">Customer Communications Day (Paragon GmbH)</h4>
@@ -682,10 +675,9 @@
                             </ul>
                         </div>
 
-                        <!-- Projekt 4 -->
                         <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200">
                             <div class="flex flex-wrap justify-between items-baseline">
-                                <h4 class="font-bold text-stone-900 text-sm">Cross-Media-Projekt: Rhön </h4>
+                                <h4 class="font-bold text-stone-900 text-sm">Cross-Media-Projekt: Rhön</h4>
                                 <span class="text-[11px] text-stone-500 font-medium">Mai 2025</span>
                             </div>
                             <p class="text-stone-500 text-[11px] mb-1">Hochschulprojekt</p>
@@ -696,7 +688,6 @@
                             </ul>
                         </div>
 
-                        <!-- Projekt 5 -->
                         <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200">
                             <div class="flex flex-wrap justify-between items-baseline">
                                 <h4 class="font-bold text-stone-900 text-sm">Corporate Identity: Startup Carebells</h4>
@@ -710,7 +701,6 @@
                             </ul>
                         </div>
 
-                        <!-- Projekt 6 -->
                         <div class="bg-stone-50 p-3.5 rounded-lg border border-stone-200">
                             <div class="flex flex-wrap justify-between items-baseline">
                                 <h4 class="font-bold text-stone-900 text-sm">Videoprojekt: Nachhaltig mobil in Würzburg</h4>
@@ -723,7 +713,6 @@
                                 <li>Kamera und Postproduktion</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
 
@@ -739,7 +728,7 @@
                         </div>
                         <div class="p-3 bg-stone-50 rounded-lg border border-stone-200">
                             <span class="text-[10px] font-semibold text-stone-500">2022 bis 2022</span>
-                            <h4 class="font-bold text-stone-900 text-sm mt-0.5">Bachelor Deutsch als Zweit- und Fremdsprache</h4>
+                            <h4 class="font-bold text-stone-900 text-sm mt-0.5">Bachelor DaZ / DaF</h4>
                             <p class="text-stone-500 text-[11px] mt-0.5">(ohne Abschluss)</p>
                         </div>
                         <div class="p-3 bg-stone-50 rounded-lg border border-stone-200">
@@ -778,7 +767,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="px-6 py-3 border-t border-stone-200 bg-stone-50 flex justify-between items-center text-xs text-stone-500 no-print flex-shrink-0">
@@ -811,28 +799,32 @@
         </div>
     </div>
 
-    <!-- Magazine Modal -->
-    <div id="magazine-modal" class="fixed inset-0 z-50 bg-stone-950/85 backdrop-blur-sm hidden flex items-center justify-center p-3 sm:p-6">
-        <div class="bg-white w-full max-w-3xl max-h-[92vh] rounded-2xl overflow-hidden shadow-2xl border border-stone-200 flex flex-col">
-            <div class="p-4 border-b border-stone-200 flex items-center justify-between bg-stone-50">
-                <div>
-                    <h3 id="mag-modal-title" class="font-serif font-bold text-base text-stone-950">Publikation</h3>
-                    <p id="mag-modal-subtitle" class="text-xs font-semibold text-stone-500 uppercase tracking-wider">Ausgabe / Format</p>
+    <!-- Interaktives Flipbook Modal (Magazin / PDF blätterbar) -->
+    <div id="flipbook-modal" class="fixed inset-0 z-50 bg-stone-950/90 backdrop-blur-md hidden flex items-center justify-center p-2 sm:p-6">
+        <div class="bg-white w-full max-w-5xl h-[92vh] rounded-2xl overflow-hidden shadow-2xl border border-stone-200 flex flex-col">
+            <div class="px-5 py-3 border-b border-stone-200 flex items-center justify-between bg-stone-50 flex-shrink-0">
+                <div class="flex items-center space-x-3">
+                    <span class="text-xs font-bold uppercase tracking-wider bg-stone-900 text-stone-100 px-2 py-0.5 rounded">Blätterkatalog</span>
+                    <h3 id="flipbook-modal-title" class="font-serif font-bold text-base text-stone-900">Magazin Vorschau</h3>
                 </div>
-                <button onclick="closeMagazineModal()" class="w-8 h-8 rounded-full hover:bg-stone-200 text-stone-600 flex items-center justify-center">
-                    <i class="fa-solid fa-xmark text-sm"></i>
-                </button>
-            </div>
-            <div class="p-6 overflow-y-auto custom-scrollbar flex-1 space-y-4">
-                <img id="mag-modal-img" src="" alt="Magazin Auszug" class="w-full rounded-lg shadow-sm border border-stone-200">
-                <div class="p-4 bg-editorial-50 rounded-lg border border-stone-200 text-xs text-stone-700 leading-relaxed" id="mag-modal-text">
-                    Magazin-Vorschau und Detailauszug.
+                <div class="flex items-center space-x-2">
+                    <a id="flipbook-external-link" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-stone-600 hover:text-stone-950 px-2.5 py-1.5 rounded hover:bg-stone-200 transition font-medium flex items-center gap-1">
+                        <span>Vollbild</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                    <button onclick="closeFlipbookModal()" class="w-8 h-8 rounded-full hover:bg-stone-200 text-stone-600 flex items-center justify-center transition">
+                        <i class="fa-solid fa-xmark text-sm"></i>
+                    </button>
                 </div>
             </div>
-            <div class="px-6 py-3 border-t border-stone-200 bg-stone-50 flex justify-end">
-                <button onclick="closeMagazineModal()" class="px-4 py-2 rounded-md bg-stone-900 text-stone-100 text-xs font-semibold">
-                    Schließen
-                </button>
+
+            <div class="flex-1 bg-stone-100 relative">
+                <iframe id="flipbook-iframe" class="w-full h-full border-0" src="" allowfullscreen allow="clipboard-write"></iframe>
+            </div>
+            
+            <div class="px-6 py-2.5 border-t border-stone-200 bg-stone-50 flex justify-between items-center text-xs text-stone-500 flex-shrink-0">
+                <span>Tipp: Blättern durch Klicken, Wischen oder Pfeiltasten.</span>
+                <button onclick="closeFlipbookModal()" class="font-semibold text-stone-900 hover:underline">Schließen ✕</button>
             </div>
         </div>
     </div>
@@ -875,6 +867,7 @@
             });
         }
 
+        // CV Modal
         const cvModal = document.getElementById('cv-modal');
         function openCvModal() {
             cvModal.classList.remove('hidden');
@@ -888,6 +881,7 @@
             window.print();
         }
 
+        // YouTube Modal
         const ytModal = document.getElementById('youtube-modal');
         const ytIframe = document.getElementById('yt-iframe');
         const ytTitle = document.getElementById('yt-modal-title');
@@ -907,30 +901,32 @@
             document.body.style.overflow = '';
         }
 
-        const magModal = document.getElementById('magazine-modal');
-        const magTitle = document.getElementById('mag-modal-title');
-        const magSubtitle = document.getElementById('mag-modal-subtitle');
-        const magImg = document.getElementById('mag-modal-img');
-        const magText = document.getElementById('mag-modal-text');
+        // Interaktives Flipbook Modal
+        const flipbookModal = document.getElementById('flipbook-modal');
+        const flipbookIframe = document.getElementById('flipbook-iframe');
+        const flipbookTitle = document.getElementById('flipbook-modal-title');
+        const flipbookLink = document.getElementById('flipbook-external-link');
 
-        function openMagazineModal(title, subtitle, imgSrc, detailedDesc) {
-            magTitle.textContent = title;
-            magSubtitle.textContent = subtitle;
-            magImg.src = imgSrc;
-            magText.textContent = detailedDesc;
-            magModal.classList.remove('hidden');
+        function openFlipbookModal(title, url) {
+            flipbookTitle.textContent = title;
+            flipbookLink.href = url;
+            flipbookIframe.src = url;
+            flipbookModal.classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
-        function closeMagazineModal() {
-            magModal.classList.add('hidden');
+
+        function closeFlipbookModal() {
+            flipbookIframe.src = "";
+            flipbookModal.classList.add('hidden');
             document.body.style.overflow = '';
         }
 
+        // Escape-Taste schließt alle Modals
         window.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeCvModal();
                 closeYouTubeModal();
-                closeMagazineModal();
+                closeFlipbookModal();
             }
         });
     </script>
